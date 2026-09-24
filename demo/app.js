@@ -158,7 +158,6 @@
           },
           t = new Image(),
           u;
-      t.crossOrigin = "Anonymous";
       u = 0;
       t.onload = function () {
           n.x = o(r + 10, n.options.width - (r + 10));
@@ -196,7 +195,7 @@
               u >= n.options.maxLoadCount)
           ) {
               n.text.textContent = "Ngarkimi d\u00ebshtoi";
-              n.classList.add("text-danger");
+              n.text.classList.add("text-danger");
               return;
           }
           t.src = n.options.localImages();
